@@ -6,6 +6,7 @@ import About from './components/financial/About'
 import Testimonial from './components/financial/Testimonial'
 import Footer from './components/financial/Footer'
 import Demo from './components/financial/Demo'
+import { StarWars } from './components/starWars/StarWars'
 
 
 
@@ -16,12 +17,7 @@ const App = () => {
   return (
  
     <>
-    <Navbar />
-    <Hero />
-    <About />
-    <Testimonial />
-    <Demo />
-    <Footer/>
+   <StarWars/>
 
         </>
    
