@@ -1,16 +1,31 @@
-import React from "react";
-import "./App.css";
-import Dougnots from "./components/charts/Dougnots";
+import React, { useEffect } from 'react'
+import { ParallaxProvider } from 'react-scroll-parallax'
+import Navbar from './components/financial/Navbar'
+import Hero from './components/financial/Hero'
+import About from './components/financial/About'
+import Testimonial from './components/financial/Testimonial'
+import Footer from './components/financial/Footer'
+import Demo from './components/financial/Demo'
 
-function App() {
-  
+
+
+
+
+const App = () => {
+ 
   return (
-    <div >
-<Dougnots />
-<Dougnots />
-    </div>
-  );
+ 
+    <>
+    <Navbar />
+    <Hero />
+    <About />
+    <Testimonial />
+    <Demo />
+    <Footer/>
+
+        </>
+   
+  )
 }
 
-
-export default App;
+export default App
