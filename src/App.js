@@ -1,12 +1,10 @@
 import React, { useEffect } from 'react'
-import { ParallaxProvider } from 'react-scroll-parallax'
-import Navbar from './components/financial/Navbar'
-import Hero from './components/financial/Hero'
-import About from './components/financial/About'
-import Testimonial from './components/financial/Testimonial'
-import Footer from './components/financial/Footer'
-import Demo from './components/financial/Demo'
-import { StarWars } from './components/starWars/StarWars'
+import { Route,Router,Routes,Link } from 'react-router-dom'
+import Home from './components/financial/Home'
+import AboutUs from './components/financial/routes/AboutUs'
+import TestimonialUs from './components/financial/routes/TestimonialUs'
+import DemoUs from './components/financial/routes/DemoUs'
+
 
 
 
@@ -15,11 +13,17 @@ import { StarWars } from './components/starWars/StarWars'
 const App = () => {
  
   return (
- 
-    <>
-   <StarWars/>
-
-        </>
+<>
+<Routes>
+      <Route path='/' element={<Home />}/>
+      <Route path='/about' element={<AboutUs />}/>
+      <Route path='/testimonial' element={<TestimonialUs />}/>
+      <Route path='/demo' element={<DemoUs />}/>
+    </Routes>
+</>
+   
+    
+  
    
   )
 }
